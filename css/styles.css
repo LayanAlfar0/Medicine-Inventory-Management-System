@@ -1,0 +1,344 @@
+  /* General Styles */
+  body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F4F6F9;
+    color: #4B4B4B;
+  }
+
+  h1,
+  h2,
+  h3 {
+    color: #2C3E50;
+  }
+
+  a {
+    text-decoration: none;
+    color: #1ABC9C;
+    transition: color 0.3s;
+  }
+
+  a:hover {
+    color: #16A085;
+  }
+
+
+  .login-container {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+  }
+
+  /* Navigation Bar */
+  .navbar {
+    background: linear-gradient(90deg, #1ABC9C, #3498DB);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem 0;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 85px;
+  }
+
+  .navbar-container {
+    width: 90%;
+    padding: 0 0.8rem;
+    margin: auto;
+  }
+
+  .navbar ul {
+    display: inline;
+    float: right;
+    list-style: none;
+  }
+
+  .navbar ul li {
+    display: inline;
+    list-style: none;
+    padding: 0 1rem;
+  }
+
+  .navbar ul li a {
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    padding: 10px;
+    text-decoration: none;
+  }
+
+  .navbar ul li a:hover {
+    color: #16A085;
+  }
+
+  .navbar ul li .active {
+    border-bottom: 1px solid white;
+  }
+
+  .logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  /* Buttons */
+  button {
+    background: linear-gradient(90deg, #1ABC9C, #3498DB);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  button:hover {
+    background: linear-gradient(90deg, #16A085, #2980B9);
+    transform: scale(1.05);
+  }
+
+  /* Tables */
+  table {
+    width: 90%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+    background: white;
+    overflow-x: auto;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 20px;
+  }
+
+  th,
+  td {
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+  }
+
+  th {
+    background: #1ABC9C;
+    color: white;
+    font-size: 1rem;
+  }
+
+  tr:nth-child(even) {
+    background-color: #F9F9F9;
+  }
+
+  tr:hover {
+    background-color: #F1F1F1;
+  }
+
+  /* Forms */
+  form {
+    max-width: 600px;
+    margin: 2rem auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+
+  input:focus,
+  select:focus,
+  textarea:focus {
+    border-color: #1ABC9C;
+    outline: none;
+    box-shadow: 0 0 5px rgba(26, 188, 156, 0.5);
+  }
+
+  /*admin-dashboard*/
+  .admin-dashboard,
+  .staff-dashboard {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+    padding: 20px;
+    height: 100%;
+  }
+
+  .dashboard-admin-item:nth-child(1),
+  .dashboard-staff-item:nth-child(1) {
+    float: left;
+    display: inline;
+  }
+
+  .dashboard-admin-item:nth-child(2),
+  .dashboard-staff-item:nth-child(2) {
+    float: right;
+    display: inline;
+  }
+
+  .dashboard-admin-item img,
+  .staff-dashboard img {
+    border-radius: 12px;
+    width: 400px;
+    height: 250px;
+  }
+
+  .dashboard-admin-item a,
+  .staff-dashboard a {
+    color: white;
+  }
+
+  .medicine-inventory,
+  .invoice,
+  .medicine-management,
+  .user-management {
+    margin-top: -50px;
+  }
+
+  /*manage user - admin*/
+
+  .center {
+    text-align: center;
+  }
+
+  .d-none {
+    display: none;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 50px;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .close {
+    text-align: end;
+    width: 100%;
+    display: block;
+  }
+
+  .top-div {
+    width: 90%;
+    margin: auto;
+  }
+
+  .profile-pic {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+
+  .add-btn {
+    background: white;
+    color: #16A085;
+    border: #16A085 solid 1px;
+  }
+
+  .add-btn:hover {
+    background: white;
+  }
+
+.user-name, .medicine-name{
+text-align: center;
+}
+.hero-section {
+  background-color: #0073e6;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: white;
+  color: #0073e6;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #005bb5;
+  color: white;
+}
+
+/* Features Section */
+.features {
+  width: 90%;
+  margin: 30px auto;
+  overflow: hidden;
+}
+
+.feature {
+  width: 30%;
+  float: left;
+  margin: 1.66%;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feature h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #0073e6;
+}
+
+.feature p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #0073e6;
+  color: white;
+  margin-top: 20px;
+}
